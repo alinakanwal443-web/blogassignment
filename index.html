@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stories and updates from the University of Layyah community.">
+  <title>University of Layyah | Campus Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>University of Layyah · Campus Journal</span>
+      <span>Learning, discovery and community</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container navigation">
+      <a class="brand" href="#home">
+        <span class="crest">UL</span>
+        <span>
+          University of Layyah
+          <small>KNOWLEDGE · CHARACTER · SERVICE</small>
+        </span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Open navigation">
+        ☰
+      </button>
+
+      <nav id="navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#stories">Stories</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="contact-link">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">Ideas from our campus</span>
+        <h1>Curiosity grows into a brighter future.</h1>
+        <p>
+          Explore the people, research and moments shaping life at the
+          University of Layyah.
+        </p>
+        <a class="button" href="#stories">Read the latest stories →</a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUxHt5gH8yb_dRtKwERiZDZulXSrbtTMI0py3zEcbphQ&s"
+          alt="University of Layyah"
+        >
+        <span class="image-label">Welcome to our campus</span>
+      </div>
+    </section>
+
+    <section class="stories-section container" id="stories">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">From the university</span>
+          <h2>Latest Stories</h2>
+        </div>
+
+        <div class="filters" aria-label="Filter stories">
+          <button class="filter active" data-filter="all">All Stories</button>
+          <button class="filter" data-filter="campus">Campus</button>
+          <button class="filter" data-filter="research">Research</button>
+          <button class="filter" data-filter="student-life">Student Life</button>
+        </div>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-category="campus">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUxHt5gH8yb_dRtKwERiZDZulXSrbtTMI0py3zEcbphQ&s"
+            alt="University campus"
+          >
+          <div class="card-content">
+            <span class="tag">Campus</span>
+            <h3>A welcoming place to learn and belong</h3>
+            <p>Discover the campus, its community and opportunities for students.</p>
+            <div class="meta">University Community · 4 min read</div>
+          </div>
+        </article>
+
+        <article class="card" data-category="research">
+          <img
+            src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80"
+            alt="Researcher working in a laboratory"
+          >
+          <div class="card-content">
+            <span class="tag">Research</span>
+            <h3>Turning thoughtful questions into discovery</h3>
+            <p>Explore the ideas and learning experiences that inspire discovery.</p>
+            <div class="meta">Research · 5 min read</div>
+          </div>
+        </article>
+
+        <article class="card" data-category="student-life">
+          <img
+            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80"
+            alt="Students studying together"
+          >
+          <div class="card-content">
+            <span class="tag">Student Life</span>
+            <h3>Building friendships beyond the classroom</h3>
+            <p>Campus clubs and events make it easy to meet and connect.</p>
+            <div class="meta">Student Life · 3 min read</div>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-message" id="emptyMessage">
+        No stories in this category yet.
+      </p>
+    </section>
+
+    <section class="newsletter container" id="about">
+      <div id="contact">
+        <h2>Stay connected with campus</h2>
+        <p>Get new stories and university updates in your inbox.</p>
+      </div>
+
+      <form class="subscribe-form" id="subscribeForm">
+        <input
+          type="email"
+          placeholder="Your email address"
+          aria-label="Your email address"
+          required
+        >
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <span>University of Layyah · Campus Journal</span>
+      <span>© <span id="year"></span> University of Layyah</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
